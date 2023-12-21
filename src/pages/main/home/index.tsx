@@ -21,7 +21,7 @@ const Home = () => {
                     <form action="" id="form_request">
                         <label htmlFor="name">Ваше имя:</label>
                         <input type="text" id="name" name="name"/>
-                        <label htmlFor="tel">Телефон для связи:</label>
+                        <label>Телефон для связи:</label>
                         <PhoneInput
                             specialLabel={''}
                             international
@@ -29,7 +29,6 @@ const Home = () => {
                             placeholder="+375..."
                             value={value}
                             onChange={setValue}/>
-
                         <label htmlFor="info">Дополнительная информация:</label>
                         <textarea name="info" id="info" cols={3} rows={6}/>
                         <button>Отправить</button>
