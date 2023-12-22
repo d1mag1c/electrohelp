@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {DescriptionBlock, FormBlock, ImgHome, OrderBlock, WrapperOrder} from "./style";
 import PhoneInput from "react-phone-number-input/input";
-import handler from "../../../../data/email";
 
 const Order = () => {
     const [value, setValue] = useState<string>()
@@ -32,7 +31,7 @@ const Order = () => {
                             onChange={setValue}/>
                         <label htmlFor="info">Дополнительная информация:</label>
                         <textarea name="info" id="info" cols={3} rows={6}/>
-                        <button onClick={() => handler}>Отправить</button>
+                        <button>Отправить</button>
                     </form>
                 </FormBlock>
             </OrderBlock>
