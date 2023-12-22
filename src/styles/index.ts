@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
         color: black;
 
         &:hover {
-            color: red;
+            color: #ffc400;
         }
     }
 
