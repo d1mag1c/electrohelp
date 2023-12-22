@@ -3,7 +3,9 @@ import {DescriptionBlock, FormBlock, ImgHome, OrderBlock, WrapperOrder} from "./
 import PhoneInput from "react-phone-number-input/input";
 
 const Order = () => {
+
     const [value, setValue] = useState<string>()
+
     return (
         <WrapperOrder>
 
@@ -19,7 +21,7 @@ const Order = () => {
                 <FormBlock>
                     <span><img src="/img/help1.png" alt="Help"/></span>
                     <h2>Оставить заявку!</h2>
-                    <form action="" id="form_request">
+                    <form action="index.php" id="form_request" method="post">
                         <label htmlFor="name">Ваше имя:</label>
                         <input type="text" id="name" name="name"/>
                         <label>Телефон для связи:</label>
@@ -31,7 +33,7 @@ const Order = () => {
                             onChange={setValue}/>
                         <label htmlFor="info">Дополнительная информация:</label>
                         <textarea name="info" id="info" cols={3} rows={6}/>
-                        <button>Отправить</button>
+                        <button type="submit">Отправить</button>
                     </form>
                 </FormBlock>
             </OrderBlock>
