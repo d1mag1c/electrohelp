@@ -78,8 +78,9 @@ export const DescriptionBlock = styled.div`
     p:last-of-type {
         font-size: 32px;
     }
-
-
+    @media (max-width: 400px) {
+        margin: 20px 0;
+    }
 `
 
 export const FormBlock = styled.div`
@@ -100,9 +101,14 @@ export const FormBlock = styled.div`
         flex-direction: column;
         align-items: center;
         width: 100%;
+        position: relative;
 
         label {
-            margin: 15px 5px 5px;
+            margin: 10px 5px 5px;
+
+            span {
+                color: red;
+            }
         }
 
         input {
@@ -121,19 +127,28 @@ export const FormBlock = styled.div`
             padding: 5px 10px;
             font-size: 18px;
             resize: none;
+
         }
 
-        button {
+        .button_form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
             width: 200px;
             height: 50px;
             border-radius: 10px;
             background: #ffc400;
             margin: 20px auto 0;
+            caret-color: rgba(255, 255, 255, 0);
 
+            &:hover {
+                background: #ffae00;
+            }
         }
     }
 
-    span {
+    .img_help {
         display: flex;
         position: absolute;
         top: -40px;
@@ -148,7 +163,7 @@ export const FormBlock = styled.div`
 
     @media (max-width: 960px) {
 
-        span {
+        .img_help {
             top: -50px;
             right: -30px;
         }
