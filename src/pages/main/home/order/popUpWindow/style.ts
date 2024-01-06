@@ -4,7 +4,7 @@ export const PopUpBlock = styled.div`
     position: absolute;
     width: max-content;
     height: 50px;
-    background: #ffc400;
+    background: green;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -16,8 +16,9 @@ export const PopUpBlock = styled.div`
     z-index: 10;
     
     p{
-        color: black;
+        color: white;
         min-width: max-content;
+        font-size: 18px;
     }
     
     `

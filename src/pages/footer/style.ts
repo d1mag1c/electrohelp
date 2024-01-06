@@ -2,32 +2,41 @@ import styled from "styled-components";
 
 export const FooterBlock = styled.section`
     width: 80%;
-    height: 80px;
-    background: black;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
     position: fixed;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     z-index: 100;
-    padding: 20px 30px;
-
-
+    max-width: 2000px;
     @media (max-width: 960px) {
 
         width: 100%;
     }
-    @media (max-width: 600px) {
+
+`
+export const FooterContent = styled.div`
+    width: 100%;
+    height: 80px;
+    background: black;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    
+
+    @media (max-width: 700px) {
 
         flex-direction: column;
         height: 140px;
-        
+
     }
 `
+
 export const ImgFooter = styled.div`
     position: relative;
     width: 100px;
@@ -64,6 +73,11 @@ export const ButtonCall = styled.button`
         background: #d29c00;
 
     }
+    &:active{
+
+        transform: translate(5px,5px);
+        box-shadow: 0 0 0 0;
+    }
 `
 
 export const Tell = styled.div `
@@ -77,9 +91,9 @@ export const Tell = styled.div `
     }
 
     border-bottom: 3px solid #ffc400;
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
 
-margin-top: 20px;
+        margin-top: 20px;
 
     }
 `

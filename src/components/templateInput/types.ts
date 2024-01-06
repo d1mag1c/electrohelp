@@ -6,9 +6,9 @@ export type InputFormProps = {
     id:string,
     placeholder: string,
     value: string,
-    error: string,
+    error?: string,
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
-    errorChange: Dispatch<SetStateAction<string>>,
-    validate: (email: string) => string
+    errorChange?: Dispatch<SetStateAction<string>>,
+    validate?: (email: string) => string
 }
 

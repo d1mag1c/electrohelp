@@ -4,5 +4,5 @@ export const AdvantageBlock = styled.section `
 
     width: 100%;
     height: 500px;
-    background: bisque;
+    background: white;
 `

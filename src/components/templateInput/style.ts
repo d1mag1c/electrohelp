@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
+export const TemplateInputBlock = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
 export const Input = styled.input<{ $error?: string }>`
-  width: 80%;
+  width: 100%;
   height: 40px;
   display: flex;
   padding: 10px;

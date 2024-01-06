@@ -10,10 +10,10 @@ const Burger: FC<stateType> = ({state}) => {
     return (
         <BurgerBlock $state={state}>
             <Link to='/'>Главная</Link>
-            <Link to='/'>Галерея</Link>
-            <Link to='/'>Расценки</Link>
-            <Link to='/'>О нас</Link>
-            <Link to='/'>Контакты</Link>
+            <Link to='gallery'>Галерея</Link>
+            <Link to='prices'>Расценки</Link>
+            <Link to='aboutUs'>О нас</Link>
+            <Link to='contacts'>Контакты</Link>
         </BurgerBlock>
     );
 };

@@ -1,6 +1,7 @@
 import {Values} from "../pages/main/home/order";
+import {ValuesCall} from "../pages/footer/requestCall";
 
-export const sendContactForm = async (data: Values) => {
+export const sendContactForm = async (data: Values | ValuesCall) => {
 
     let customer = '';
     let status = false;
