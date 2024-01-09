@@ -62,6 +62,14 @@ export const FooterFormBlock = styled.div`
             &:hover {
                 background: #ffae00;
             }
+            &:active {
+  
+                box-shadow: 0 0 15px 5px rgba(248, 244, 155, 0.62);
+                min-width: 145px;
+                width: 145px;
+                height: 35px;
+                margin: 2.5px 0 0 15px;
+            }
         }
 
         @media (max-width: 700px) {

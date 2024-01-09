@@ -2,15 +2,20 @@ import styled from "styled-components";
 
 export const WrapperOrder = styled.section`
     width: 100%;
-    min-height: 1000px;
+    min-height: 900px;
     z-index: 5;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("/img/kabel.png") no-repeat center;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0)), linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("/img/kabel.png") no-repeat center;
     background-size: cover;
-    padding: 100px 30px 120px 30px;
+    padding: 80px 30px;
     display: flex;
+    @media (max-width: 800px) {
+
+        padding-bottom: 50px;
+    }
     @media (max-width: 600px) {
 
-        padding: 100px 30px 180px 30px;
+        padding: 70px 30px 50px 30px;
+        min-height: 700px;
     }
 `
 
@@ -145,6 +150,14 @@ export const FormBlock = styled.div`
             &:hover {
                 background: #ffae00;
             }
+
+            &:active {
+
+                box-shadow: 0 0 15px 5px rgba(255, 255, 98, 0.62);
+                width: 195px;
+                height: 45px;
+                margin: 22.5px 0 2.5px 0;
+            }
         }
     }
 
@@ -171,7 +184,7 @@ export const FormBlock = styled.div`
 
     @media (max-width: 800px) {
         width: 400px;
-        margin: 30px auto;
+        margin: 30px auto 0;
         grid-column: 1/3;
 
     }

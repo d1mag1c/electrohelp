@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
         border: none;
         cursor: pointer;
     }
-
+    
     a {
         cursor: pointer;
         text-decoration: none;

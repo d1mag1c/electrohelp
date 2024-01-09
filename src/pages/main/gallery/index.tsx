@@ -1,10 +1,11 @@
 import React from 'react';
+import {GalleryBlock} from "./style";
 
 const Gallery = () => {
     return (
-        <div>
-
-        </div>
+        <GalleryBlock>
+            <p>В разработке!</p>
+        </GalleryBlock>
     );
 };
 

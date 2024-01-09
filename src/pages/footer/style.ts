@@ -62,7 +62,7 @@ export const ButtonCall = styled.button`
     background: #ffc400;
     padding: 0 20px;
     box-shadow: 5px 5px 5px 0 rgba(248, 244, 155, 0.62);
-    min-width: max-content;
+    min-width: 200px;
     margin: 0 20px;
     p {
         font-weight: bold;

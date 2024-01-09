@@ -1,10 +1,11 @@
 import React from 'react';
+import {ContactsBlock} from "./style";
 
 const Contacts = () => {
     return (
-        <div>
-
-        </div>
+        <ContactsBlock>
+            <p>В разработке!</p>
+        </ContactsBlock>
     );
 };
 

@@ -7,17 +7,24 @@ const Header = () => {
 
     const [state, setState] = useState(false);
 
+    const SetStateFalse = () => {
+
+        if (state) {
+
+            setState(false)
+        }
+    }
     return (
         <>
             <HeaderBlock $state={state}>
                 <HeaderTitle><a href="/">Electro<span>Help</span></a></HeaderTitle>
 
                 <HeaderLinks>
-                    <Link to='/'>Главная</Link>
-                    <Link to='gallery'>Галерея</Link>
-                    <Link to='prices'>Расценки</Link>
-                    <Link to='aboutUs'>О нас</Link>
-                    <Link to='contacts'>Контакты</Link>
+                    <Link to='/' onClick={SetStateFalse}>Главная</Link>
+                    <Link to='gallery' onClick={SetStateFalse}>Галерея</Link>
+                    <Link to='prices' onClick={SetStateFalse}>Расценки</Link>
+                    <Link to='aboutUs' onClick={SetStateFalse}>О нас</Link>
+                    <Link to='contacts' onClick={SetStateFalse}>Контакты</Link>
                 </HeaderLinks>
                 <BurgerButton onClick={() => setState(!state)} $state={state}>
                     <span></span><span></span><span></span>
@@ -27,7 +34,7 @@ const Header = () => {
 
             </HeaderBlock>
             {state && <WindowClose onClick={() => setState(false)} /> }
-            <Burger state={state}/>
+            <Burger state={state} setState={setState}/>
         </>
     )
 };
