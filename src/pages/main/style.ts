@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainBlock = styled.section`
     max-width: 2000px;
     margin: 0 auto;
-    min-height: 800px;
+    min-height: 950px;
     display: flex;
     flex-direction: column;
     z-index: 5;

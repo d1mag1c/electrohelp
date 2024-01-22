@@ -24,7 +24,8 @@ const TemplateInput = (props: InputFormProps) => {
                 id={props.id}
                 onChange={props.onChange}
                 onBlur={validateValue}
-                $error={props.error}>
+                $error={props.error}
+                autoComplete="on">
             </Input>
             <ErrorMessageBlock>
                 {props.error !== 'true' && <span>{props.error}</span>}

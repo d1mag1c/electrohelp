@@ -65,14 +65,15 @@ const RequestCall: FC<IState> = ({state}) => {
             <RequestCallBlock $state={state}>
 
                 <FooterFormBlock>
-                    <form id="form_request_call">
+                    <form id="form_request_call" >
                         <TemplateInput
                             type={'text'}
                             name={'name'}
                             id={'name'}
                             placeholder={'Ваше имя (необязательно)'}
                             value={value.name}
-                            onChange={handleChange}/>
+                            onChange={handleChange}
+                        />
                         <TemplateInput
                             type={'phone'}
                             name={'phone'}
