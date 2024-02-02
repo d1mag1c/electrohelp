@@ -21,17 +21,18 @@ const Contacts = () => {
                     <ContactsSocialWrapper>
                         <ContactsIconsPhone>
                             <div>
-                                <Link to={'tel:+375292110932'}><img src="/img/icons/phone.png" alt="phone"/></Link>
-                                <Link to={'https://t.me/d1mag1c'}><img src="/img/icons/telegram.png"
-                                                                       alt="telegram"/></Link>
-                                <Link to={'viber://chat?number=375292110932'}><img src="/img/icons/viber.png"
-                                                                                   alt="viber"/></Link>
+                                <Link to={'tel:+375292110932'}>
+                                    <img src="/img/icons/phone.png" alt="phone"/></Link>
+                                <Link to={'https://t.me/d1mag1c'}>
+                                    <img src="/img/icons/telegram.png" alt="telegram"/></Link>
+                                <Link to={'viber://chat?number=375292110932'}>
+                                    <img src="/img/icons/viber.png" alt="viber"/></Link>
                             </div>
                             <p>+375 (29) 2110932</p>
                         </ContactsIconsPhone>
                         <ContactsEmail>
-                            <Link to={'mailto:electrohelp.by@gmail.com'}><img src="/img/icons/email.png"
-                                                                              alt="email"/></Link>
+                            <Link to={'mailto:electrohelp.by@gmail.com'}>
+                                <img src="/img/icons/email.png" alt="email"/></Link>
                             <p>electrohelp.by@gmail.com</p>
                         </ContactsEmail>
                         <ContactsInstagram>

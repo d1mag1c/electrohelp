@@ -11,10 +11,10 @@ export type stateType = {
 const Burger: FC<stateType> = ({state, setState}) => {
 
     const SetStateFalse = () => {
-
+        window.scroll({top: 0})
         if (state) {
-
             setState(false)
+
         }
     }
 

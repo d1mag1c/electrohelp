@@ -33,8 +33,10 @@ export const GlobalStyle = createGlobalStyle`
         transition: 0.5s;
         background: whitesmoke;
 
-
     }
-
+    html,
+    body, #root {
+        height: 100%;
+    }
 
 `

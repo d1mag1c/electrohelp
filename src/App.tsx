@@ -5,7 +5,6 @@ import Main from "./pages/main";
 import RouteComponent from "./router";
 import {GlobalStyle} from "./styles";
 import {BrowserRouter} from "react-router-dom";
-import FixedFooter from "./pages/footer/fixedFooter";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
           <Main>
               <RouteComponent/>
           </Main>
-          <FixedFooter/>
           <Footer/>
       </BrowserRouter>
   );

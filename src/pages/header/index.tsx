@@ -8,10 +8,10 @@ const Header = () => {
     const [state, setState] = useState(false);
 
     const SetStateFalse = () => {
-
+        window.scroll({top: 0})
         if (state) {
-
             setState(false)
+
         }
     }
     return (
