@@ -23,7 +23,7 @@ const Burger: FC<stateType> = ({state, setState}) => {
             <Link to='/' onClick={SetStateFalse}>Главная</Link>
             <Link to='gallery' onClick={SetStateFalse}>Галерея</Link>
             <Link to='prices' onClick={SetStateFalse}>Расценки</Link>
-            <Link to='aboutUs' onClick={SetStateFalse}>О нас</Link>
+            <Link to='services' onClick={SetStateFalse}>Услуги</Link>
             <Link to='contacts' onClick={SetStateFalse}>Контакты</Link>
         </BurgerBlock>
     );

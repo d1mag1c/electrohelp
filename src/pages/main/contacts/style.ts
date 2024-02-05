@@ -83,28 +83,28 @@ export const ContactsIconsPhone = styled.div`
 
     display: flex;
     align-items: center;
-
+    flex-direction: column;
 
     div {
         display: flex;
-        flex-direction: column;
+
     }
 
-    img {
+    a {
 
-        margin: 5px;
+        margin: 10px;
     }
 
     p {
-        margin-left: 20px;
-        font-size: 25px;
+
+        font-size: 30px;
 
     }
 
     @media (max-width: 600px) {
 
         p {
-            font-size: 20px;
+            font-size: 25px;
         }
     }
 `
@@ -112,6 +112,7 @@ export const ContactsIconsPhone = styled.div`
 export const ContactsEmail = styled.div`
     display: flex;
     align-items: center;
+    margin: 10px 0;
 
     img {
         width: 54px;
@@ -124,13 +125,14 @@ export const ContactsEmail = styled.div`
         font-size: 20px;
 
     }
+
     @media (max-width: 600px) {
 
         p {
             font-size: 15px;
         }
     }
-    `
+`
 
 export const ContactsInstagram = styled.div`
     display: flex;
@@ -189,15 +191,3 @@ export const ContactsRequisites = styled.div`
     }
 
 `
-export const ContactsGoogleMap = styled.div`
-    margin-top: 150px;
-    width: 80%;
-    height: 600px;
-    
-    @media (max-width: 600px) {
-        margin-top: 100px;
-        width: 100%;
-        padding: 0 20px;
-        height: 400px;
-    }
-    `
