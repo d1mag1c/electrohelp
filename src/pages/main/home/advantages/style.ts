@@ -8,7 +8,7 @@ export const AdvantageBlock = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 50px 50px;
+    padding: 50px 50px 50px;
 
     h2 {
 

@@ -43,7 +43,16 @@ export const ContactsBlock = styled.section`
         height: 45px;
         transition: 0.2s;
     }
+
+    @media (max-width: 1000px) {
+        padding: 100px 30px;
+
+
+    }
+    
     @media (max-width: 600px) {
+
+        
         h1 {
             font-size: 40px;
      

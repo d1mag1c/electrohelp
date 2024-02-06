@@ -22,6 +22,10 @@ export const RequestCallBlock = styled.div<{ $state?: boolean }>`
         transform: translateY(0);
 
     `};
+    @media (max-width: 1000px) {
+
+        height: 150px;
+    }
 
     @media (max-width: 700px) {
 

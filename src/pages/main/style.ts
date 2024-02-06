@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainBlock = styled.section`
-    max-width: 2000px;
+    max-width: 1700px;
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;

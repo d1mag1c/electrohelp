@@ -89,6 +89,7 @@ export const PricesBlock = styled.section`
     }
 
     @media (max-width: 600px) {
+        padding: 100px 30px;
         h1 {
             font-size: 40px;
 

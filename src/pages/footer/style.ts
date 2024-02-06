@@ -13,54 +13,37 @@ export const FooterBlock = styled.section`
         width: 100%;
     }
 
+    @media (max-height: 600px) {
+
+        display: none;
+    }
+
 `
 export const FooterContent = styled.div`
     width: 100%;
-    height: 80px;
     background: black;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 30px;
+    padding: 10px 30px 5px;
     position: fixed;
     bottom: 0;
     z-index: 100;
     
-
     @media (max-width: 700px) {
 
         flex-direction: column;
-        height: 140px;
-
-    }
-`
-
-export const ImgFooter = styled.div`
-    position: relative;
-    width: 100px;
-
-    img {
-
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: -80px;
-        left: 0;
-    }
-    @media (max-width: 700px) {
-
-    display: none;
-
     }
 `
 export const ButtonCall = styled.button`
-    //width: 150px;
-    height: 50px;
+    width: 200px;
+    height: 40px;
+    min-height: 40px;
     border-radius: 10px;
     background: #ffc400;
-    padding: 0 20px;
+    padding: 0 15px;
     box-shadow: 5px 5px 5px 0 rgba(248, 244, 155, 0.62);
     min-width: 200px;
     margin: 0 20px;
@@ -78,22 +61,62 @@ export const ButtonCall = styled.button`
         transform: translate(5px,5px);
         box-shadow: 0 0 0 0;
     }
+    @media (max-width: 960px) {
+
+        height: 40px;
+
+
+    }
 `
+export const SocialFooter = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 
+    img {
+        margin: 5px 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    @media (max-width: 960px) {
+
+        margin-top: 10px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+`
 export const Tell = styled.div `
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: max-content;
+    margin-left: 20px;
 
-    p {
+    a {
         color: white;
         font-family: Unbounded, 'sans-serif';
         font-size: 25px;
     }
 
     border-bottom: 3px solid #ffc400;
-    @media (max-width: 700px) {
+    @media (max-width: 960px) {
 
-        margin-top: 20px;
+        a {
+            font-size: 20px;
+        }
+
+
+    }
+    @media (max-width: 500px) {
+
+        a {
+            font-size: 15px;
+        }
+
 
     }
 `

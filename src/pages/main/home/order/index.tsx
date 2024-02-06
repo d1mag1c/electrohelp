@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {DescriptionBlock, FormBlock, ImgHome, OrderBlock, WrapperOrder} from "./style";
+import {FormBlock,OrderBlock, WrapperOrder} from "./style";
 import TemplateInput from "../../../../components/templateInput";
 import {validatePhone, validateUserName} from "../../../../utils/validate";
 import {sendContactForm} from "../../../../data/api";
@@ -62,16 +62,7 @@ const Order = () => {
         <WrapperOrder>
 
             <OrderBlock>
-                <ImgHome>
-                    <img className="work_man" src="/img/electric.png" alt="background"/>
-                </ImgHome>
-                <DescriptionBlock>
-                    <p>Нужен качественный электромонтаж?</p>
-                    <p>Ищите специалистов с высокой квалификацией?</p>
-                    <p>Мы поможем вам!</p>
-                </DescriptionBlock>
                 <FormBlock>
-                    <div className="img_help"><img src="/img/help1.png" alt="Help"/></div>
                     <h2>Оставить заявку!</h2>
                     <form action="" id="form_request">
                         <label htmlFor="name">Ваше имя <span>*</span></label>
@@ -118,6 +109,7 @@ const Order = () => {
                         {successResponse && <PopUpWindow/>}
                     </form>
                 </FormBlock>
+                <div></div>
             </OrderBlock>
         </WrapperOrder>
     );
