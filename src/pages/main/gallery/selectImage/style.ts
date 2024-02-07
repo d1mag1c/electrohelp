@@ -4,11 +4,10 @@ import {SliderBlock} from "../sliderImgGallery/style";
 export const SelectImageBlock = styled(SliderBlock)`
     margin: 0 auto;
     padding: 100px 20px 100px;
-    max-width: 1500px;
-    height: max-content;
-    justify-content: center;
-    max-height: 1200px;
     width: 100%;
+    max-width: 1600px;
+    height: 100%;
+    justify-content: center;
     background: black;
 
     .slick-list {
@@ -24,6 +23,7 @@ export const SelectImageBlock = styled(SliderBlock)`
             width: 5%;
             top: 50%;
             transform: translateY(-50%);
+            opacity: 0.5;
         }
     }
 

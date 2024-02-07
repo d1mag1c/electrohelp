@@ -25,7 +25,7 @@ const SliderImgGallery:FC<ISliderImgGallery> = ({nameImg}) => {
     }
 
     const openImage = (value: number) => {
-        window.scroll({top: 0})
+        window.scroll({top: 50})
         navigate(`/gallery/${nameImg}`, { state: { key: value}})
 
     }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
 export const FooterBlock = styled.section`
     width: 80%;
@@ -31,36 +32,61 @@ export const FooterContent = styled.div`
     position: fixed;
     bottom: 0;
     z-index: 100;
-    
+
     @media (max-width: 700px) {
 
         flex-direction: column;
     }
 `
-export const ButtonCall = styled.button`
+export const ButtonCall= styled(motion.button).attrs<{$state?: boolean}>(({$state}) => ({
+
+    animate: {
+        scale: $state ? [0.9] : [1, 0.9, 1],
+        boxShadow: $state ? [''] : ["0 0 15px 10px rgba(248, 244, 155, 0.62)", "none",  "0 0 15px 10px rgba(248, 244, 155, 0.62)"],
+
+    },
+    transition: {
+        duration: $state ? 0 : 1.8,
+        times: $state ? [0] : [0, 0.3, 0.6, 0.9],
+        repeat: $state ? 0 : Infinity,
+    },
+    whileHover: {
+        scale: 1,
+        boxShadow: "0 0 15px 10px rgba(248, 244, 155, 0.62)",
+
+        transition: {
+            times: [0],
+            repeat: 0,
+        },
+
+    },
+
+}))`
+
     width: 200px;
     height: 40px;
     min-height: 40px;
     border-radius: 10px;
     background: #ffc400;
     padding: 0 15px;
-    box-shadow: 5px 5px 5px 0 rgba(248, 244, 155, 0.62);
     min-width: 200px;
     margin: 0 20px;
+
     p {
         font-weight: bold;
         font-size: 20px;
     }
 
     &:hover {
-        background: #d29c00;
-
+        background: #ffb700;
     }
-    &:active{
 
-        transform: translate(5px,5px);
+    &:active {
+
+        transform: scale(0.9);
         box-shadow: 0 0 0 0;
     }
+
     @media (max-width: 960px) {
 
         height: 40px;
@@ -89,7 +115,7 @@ export const SocialFooter = styled.div`
         }
     }
 `
-export const Tell = styled.div `
+export const Tell = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;

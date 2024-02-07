@@ -1,19 +1,26 @@
 import React from 'react';
 import {AdvantageBlock, AdvantageCard, AdvantageContent} from "./style";
+import {animateY} from "../../../../constants/framer-motion";
+import { motion } from 'framer-motion';
 
 const Advantages = () => {
     return (
         <AdvantageBlock>
-            <h2>Причины обратиться именно к нам!</h2>
+            <motion.h2
+                variants={animateY}
+                initial="hidden"
+                whileInView = "visible"
+                viewport = {{amount: 0.1, once: true}}
+            >Причины обратиться именно к нам!</motion.h2>
             <AdvantageContent>
-                <AdvantageCard>
+                <AdvantageCard custom={3}>
                     <h4>Качество!</h4>
                     <p>Делаем все аккуратно и <br/>"по-красоте".
                         Обязательно пользуемся лайзерными уровнями и только хорошим инструментом.
                         Качество - это наша визитная карточка,
                         большенство клиентов - это те, кто порекомендовали другие заказчики.</p>
                 </AdvantageCard>
-                <AdvantageCard>
+                <AdvantageCard custom={2}>
                     <h4>Надежность!</h4>
                     <p>
                         Надежность - это одно из важнейших в электромонтаже!
@@ -22,20 +29,20 @@ const Advantages = () => {
                         безопасность!
                     </p>
                 </AdvantageCard>
-                <AdvantageCard>
+                <AdvantageCard custom={1}>
                     <h4>Гарантия!</h4>
                     <p>
                         Наша работа всегда облагается гарантией, не важно усная она или письменная.
                         По просьбе клиента составляем договор на оказания услуг с 10 летней гарантией!
                     </p>
                 </AdvantageCard>
-                <AdvantageCard>
+                <AdvantageCard custom={3}>
                     <h4>Профессионализм!</h4>
                     <p>У нас работают только лучшие, проверенные монтажники, профессионалы своего дела!
                         За каждым работником мы следим, чтобы работа была выполненная со всеми требованиями клиента.
                     </p>
                 </AdvantageCard>
-                <AdvantageCard>
+                <AdvantageCard custom={2}>
                     <h4>Опыт работы!</h4>
                     <p>Опыт в работе более 10 лет!
                         Очень много "не стандатного" приходилось делать, сталкивались с разными трудностями, но все
@@ -44,7 +51,7 @@ const Advantages = () => {
                         иную работу.
                     </p>
                 </AdvantageCard>
-                <AdvantageCard>
+                <AdvantageCard custom={1}>
                     <h4>Довольные клиенты!</h4>
                     <p>
                         Сотни довольных клиентов, стараемся для всех и для каждого.

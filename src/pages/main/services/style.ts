@@ -6,6 +6,7 @@ export const AboutUsBlock = styled.section`
     justify-content: center;
     width: 100%;
     margin: auto auto;
+    min-height: 950px;
     p {
         font-size: 30px;
     }

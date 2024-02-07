@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
+import {animateLeftX} from "../../../../constants/framer-motion";
 
 export const AdvantageBlock = styled.section`
 
@@ -19,9 +21,9 @@ export const AdvantageBlock = styled.section`
 
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
 
-        padding: 50px 20px;
+        padding: 20px 20px;
     }
 `
 
@@ -41,7 +43,11 @@ export const AdvantageContent = styled.div`
     }
 `
 
-export const AdvantageCard = styled.div`
+export const AdvantageCard = styled(motion.div).attrs(() => ({
+    initial: "hidden",
+    whileInView : "visible",
+    viewport: {amount: 0.3, once: true},
+    variants: animateLeftX}))`
     caret-color: rgba(255, 255, 255, 0);
     display: flex;
     align-items: center;

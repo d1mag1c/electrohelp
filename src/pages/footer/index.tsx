@@ -12,7 +12,9 @@ const Footer = () => {
             <RequestCall state={state}/>
             <FooterContent>
 
-                <ButtonCall onClick={() => setState(!state)}><p>{state ? 'Закрыть' : 'Заказать звонок!'}</p>
+                <ButtonCall $state={state}
+
+                            onClick={() => setState(!state)}><p>{state ? 'Закрыть' : 'Заказать звонок!'}</p>
                 </ButtonCall>
                 <SocialFooter>
                     <Link to={'https://t.me/d1mag1c'}>

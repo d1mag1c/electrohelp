@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
+import {animateRightX} from "../../../../constants/framer-motion";
 
 export const HomeTitleBlock = styled.section`
     width: 100%;
@@ -26,14 +28,14 @@ export const HomeTitleBlock = styled.section`
         font-family: Orelega_One, 'sans-serif';
         font-weight: normal;
     }
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
 
-        padding: 100px 30px 20px;
+        padding-bottom: 0;
 
     }
     @media (max-width: 700px) {
         flex-direction: column;
-        padding-bottom: 20px;
+
         h1 {
             font-size: 34px;
         }
@@ -94,9 +96,11 @@ export const DescriptionBlock = styled.div`
     }
 `
 
-export const ImgHome = styled.div`
-
-   
+export const ImgHome = styled(motion.div).attrs(() => ({
+    initial: "hidden",
+    whileInView : "visible",
+    viewport: {amount: 0.1, once: true},
+    variants: animateRightX}))`
     width: 400px;
     height: max-content;
     margin: 0 30px;

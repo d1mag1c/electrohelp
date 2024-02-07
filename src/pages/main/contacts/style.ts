@@ -4,11 +4,10 @@ export const ContactsBlock = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
     margin: 0 auto;
     padding: 150px 30px;
-
+    min-height: 950px;
     h1 {
         font-size: 50px;
         font-family: Orelega_One, 'sans-serif';

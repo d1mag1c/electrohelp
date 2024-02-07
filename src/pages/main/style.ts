@@ -7,6 +7,7 @@ export const MainBlock = styled.section`
     flex-direction: column;
     z-index: 5;
     width: 100%;
+    overflow: hidden;
     @media (max-width: 1050px) {
 
 
@@ -20,7 +21,7 @@ export const MainBlock = styled.section`
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    min-height: 950px;
+
     height: 100%;
     align-items: center;
     width: 100%;
