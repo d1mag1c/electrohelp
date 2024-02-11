@@ -8,7 +8,7 @@ export const HomeTitleBlock = styled.section`
     z-index: 5;
     background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0)), linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("/img/kabel.png") no-repeat center;
     background-size: cover;
-    padding: 120px 30px 50px;
+    padding: 120px 30px 0;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -25,16 +25,19 @@ const SliderImgGallery:FC<ISliderImgGallery> = ({nameImg}) => {
     }
 
     const openImage = (value: number) => {
-        window.scroll({top: 50})
+        const element = document.getElementById(nameImg);
+        if(element) {
+            element.scrollIntoView(true);
+        }
         navigate(`/gallery/${nameImg}`, { state: { key: value}})
 
     }
 
     return (
-        <SliderBlock>
+        <SliderBlock >
             {<Slider {...sliderSettings}>
-                {galleryImgArray[nameImg].map(e =>
-                    <div key={`${nameImg}_${e}`} onFocus={() => openImage(e)}>
+                {galleryImgArray[nameImg] && galleryImgArray[nameImg].map(e =>
+                    <div key={`${nameImg}_${e}`} onFocus={() => openImage(e)}  id={nameImg}>
                         <img src={`/img/${nameImg}/${nameImg}_${e}.jpg`} alt={`${nameImg}_${e}`}/>
                     </div>
                 )}

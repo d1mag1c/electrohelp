@@ -1,10 +1,16 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
+import {animateY} from "../../../../constants/framer-motion";
 
-export const SliderBlock = styled.div`
+export const SliderBlock = styled(motion.div).attrs(() => ({
+    initial: "hidden",
+    whileInView : "visible",
+    viewport: {amount: 0.3, once: true},
+    variants: animateY}))`
     display: flex;
     width: 90%;
     max-width: 1200px;
-    margin: 20px 30px 60px;
+    margin: 20px 30px 100px;
     height: 100%;
     min-height: 120px;
 
@@ -103,7 +109,6 @@ export const SliderBlock = styled.div`
                 transition: 0.5s;
             }
         }
-
     }
 
     @media (max-width: 1050px) {

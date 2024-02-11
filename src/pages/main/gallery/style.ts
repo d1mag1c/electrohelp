@@ -28,5 +28,25 @@ export const GalleryBlock = styled.section`
 
         }
 
+    }
+`
 
+export const LedVideo = styled.div`
+
+    width: 500px;
+    height: 500px;
+    margin: 0 20px 100px;
+    display: flex;
+
+    video {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 700px) {
+        width: 90%;
+        height: 90%;
+
+    }
 `

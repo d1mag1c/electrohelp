@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {FormBlock,OrderBlock, WrapperOrder} from "./style";
+import {FormBlock, OrderBlock, OrderDescription, OrderMobileImg, WrapperOrder} from "./style";
 import TemplateInput from "../../../../components/templateInput";
 import {validatePhone, validateUserName} from "../../../../utils/validate";
 import {sendContactForm} from "../../../../data/api";
@@ -62,7 +62,11 @@ const Order = () => {
         <WrapperOrder>
 
             <OrderBlock>
+                <OrderDescription>
+                    <p>Закажите услуги у нас и получите скидку после первого заказа до 20%! </p>
+                </OrderDescription>
                 <FormBlock>
+                    <img src="/img/superhero1.png" alt="superhero"/>
                     <h2>Оставить заявку!</h2>
                     <form action="" id="form_request">
                         <label htmlFor="name">Ваше имя <span>*</span></label>
@@ -109,7 +113,10 @@ const Order = () => {
                         {successResponse && <PopUpWindow/>}
                     </form>
                 </FormBlock>
-                <div></div>
+
+                <OrderMobileImg>
+                    <img src="/img/superhero_2.png" alt="superhero_2"/>
+                </OrderMobileImg>
             </OrderBlock>
         </WrapperOrder>
     );

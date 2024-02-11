@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
+import {animateRightX} from "../../../../constants/framer-motion";
 
 export const WrapperOrder = styled.section`
     width: 100%;
@@ -7,21 +9,72 @@ export const WrapperOrder = styled.section`
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)), linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("/img/electrical-equipment.jpg") no-repeat center;
     background-size: cover;
 
-    @media (max-width: 700px) {
-        min-height: 550px;
-        padding-bottom: 50px;
-    }
 `
 
 export const OrderBlock = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 100%;
-
-    @media (max-width: 550px) {
-        
+    width: 100%;
+    padding: 0 20px;
+    margin: 20px 0;
+    @media (max-width: 800px) {
+        flex-direction: column;
     }
+    @media (max-width: 550px) {
+        padding: 0 40px;
+
+    }
+`
+export const OrderDescription = styled(motion.div).attrs(() => ({
+    initial: "hidden",
+    whileInView : "visible",
+    viewport: {amount: 0.1, once: true},
+    variants: animateRightX}))
+    `
+    display: flex;
+    max-width: 280px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 300px;
+    background: rgb(214, 233, 255);
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+
+    p {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+
+        right: -30px;
+        bottom: 20px;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-left: 30px solid rgb(214, 233, 255);;
+        border-bottom: 15px solid transparent;
+    }
+
+    @media (max-width: 800px) {
+        margin-bottom: 0;
+        max-width: 370px;
+        order: 2;
+        &::after {
+            right: 40px;
+            bottom: -45px;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 30px solid rgb(214, 233, 255);;
+        }
+    }
+
 `
 
 export const FormBlock = styled.div`
@@ -34,7 +87,16 @@ export const FormBlock = styled.div`
     align-items: center;
     max-width: 600px;
     max-height: 500px;
+    min-width: 320px;
     position: relative;
+    margin-left: 200px;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: -246.5px;
+        width: 300px;
+    }
 
     h2 {
         color: #ffc400;
@@ -101,15 +163,39 @@ export const FormBlock = styled.div`
             }
         }
     }
-    
+
 
     @media (max-width: 800px) {
-        width: 400px;
-        margin: 30px auto 0;
-
-    }
-    @media (max-width: 550px) {
-        width: 70%;
+        margin: 30px auto 50px;
+        order: 1;
         min-width: 280px;
+        img {
+            display: none;
+        }
     }
+
+    @media (max-width: 550px) {
+      
+
+  
+    }
+`
+
+export const OrderMobileImg = styled.div`
+    display: none;
+
+    @media (max-width: 800px) {
+        display: flex;
+        order: 3;
+        width: 100%;
+        height: 100%;
+        margin: 20px 0;
+        max-width: 400px;
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
 `
