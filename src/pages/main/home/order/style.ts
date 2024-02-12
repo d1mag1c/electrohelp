@@ -8,7 +8,9 @@ export const WrapperOrder = styled.section`
     z-index: 5;
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)), linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("/img/electrical-equipment.jpg") no-repeat center;
     background-size: cover;
-
+    @media (max-width: 800px) {
+        background-position: left;
+    }
 `
 
 export const OrderBlock = styled.div`
@@ -191,6 +193,7 @@ export const OrderMobileImg = styled.div`
         height: 100%;
         margin: 20px 0;
         max-width: 400px;
+        caret-color: rgba(255, 255, 255, 0);
         img {
             object-fit: contain;
             width: 100%;

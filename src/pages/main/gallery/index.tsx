@@ -1,11 +1,15 @@
 import React from 'react';
 import {GalleryBlock, LedVideo} from "./style";
 import SliderImgGallery from "./sliderImgGallery";
+import SEO from "../../../constants/SEO";
 
 const Gallery = () => {
 
     return (
         <GalleryBlock>
+            <SEO
+                title={'Примеры работ (фото) | ElectroHelp.by'}
+                description={'Фотографии электромонтажных работ с реальных объектов. Фото освещения, розеток, подсветки, черновых работ.'}/>
             <h2>Комнатное освещение</h2>
             <SliderImgGallery nameImg='home_light'/>
             <h2>Светодиодная подсветка</h2>

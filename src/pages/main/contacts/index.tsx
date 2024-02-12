@@ -8,13 +8,15 @@ import {
     ContactsSocial, ContactsSocialWrapper
 } from "./style";
 import {Link} from "react-router-dom";
+import SEO from "../../../constants/SEO";
 
 const Contacts = () => {
 
-
     return (
         <ContactsBlock>
-
+            <SEO
+                title={'Контакты | ElectroHelp.by'}
+                description={'Контакты ElectroHelp.by - +375(29)2110932. Звоните! Поможем Вам решить Ваш вопрос!'}/>
             <ContactsContent>
                 <ContactsSocial>
                     <h1>Контакты</h1>

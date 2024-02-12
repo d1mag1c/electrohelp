@@ -1,9 +1,13 @@
 import React from 'react';
 import {PricesBlock, PricesNotes} from "./style";
+import SEO from "../../../constants/SEO";
 
 const Prices = () => {
     return (
         <PricesBlock>
+            <SEO
+                title={'Цены на электромонтажные работы. Прейскурант услуг электрика | ElectroHelp.by'}
+                description={'Подробная таблица цен на элетромонтажные работы. Качественные услуги по хорошей цене!'}/>
             <h1>Наши расценки!</h1>
             <table>
                 <thead>

@@ -66,7 +66,7 @@ const Order = () => {
                     <p>Закажите услуги у нас и получите скидку после первого заказа до 20%! </p>
                 </OrderDescription>
                 <FormBlock>
-                    <img src="/img/superhero1.png" alt="superhero"/>
+                    <img src="/img/superhero.png" alt="superhero"/>
                     <h2>Оставить заявку!</h2>
                     <form action="" id="form_request">
                         <label htmlFor="name">Ваше имя <span>*</span></label>

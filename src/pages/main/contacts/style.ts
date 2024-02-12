@@ -8,6 +8,8 @@ export const ContactsBlock = styled.section`
     margin: 0 auto;
     padding: 150px 30px;
     min-height: 950px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("/img/light-bulb.jpg") no-repeat center;
+    background-size: cover;
     h1 {
         font-size: 50px;
         font-family: Orelega_One, 'sans-serif';
@@ -45,13 +47,13 @@ export const ContactsBlock = styled.section`
 
     @media (max-width: 1000px) {
         padding: 100px 30px;
-
+        background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)), linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("/img/light-bulb.jpg") no-repeat center;
 
     }
     
     @media (max-width: 600px) {
 
-        
+  
         h1 {
             font-size: 40px;
      
@@ -66,6 +68,8 @@ export const ContactsBlock = styled.section`
 export const ContactsContent = styled.div`
 
     display: flex;
+    justify-content: space-around;
+    width: 100%;
     @media (max-width: 1000px) {
         flex-direction: column;
 

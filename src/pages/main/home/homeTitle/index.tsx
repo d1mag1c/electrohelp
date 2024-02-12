@@ -13,7 +13,7 @@ const HomeTitle = () => {
                 <DescriptionBlock>
                     <p>Нужен качественный электромонтаж?</p>
                     <p>Ищите специалистов с высокой квалификацией?</p>
-                    <p>Мы поможем вам!</p>
+                    <p>Мы поможем Вам!</p>
                     <motion.div variants={animateOpacity}
                                 initial="hidden"
                                 whileInView="visible"

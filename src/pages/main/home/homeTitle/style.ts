@@ -6,7 +6,7 @@ export const HomeTitleBlock = styled.section`
     width: 100%;
     min-height: 700px;
     z-index: 5;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0)), linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("/img/kabel.png") no-repeat center;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)), linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("/img/colorful.jpg") no-repeat center;
     background-size: cover;
     padding: 120px 30px 0;
     display: flex;
@@ -83,7 +83,7 @@ export const DescriptionBlock = styled.div`
         width: max-content;
         height: max-content;
         margin-top: 20px;
-
+        caret-color: rgba(255, 255, 255, 0);
         img {
             width: 250px;
             height: 150px;
